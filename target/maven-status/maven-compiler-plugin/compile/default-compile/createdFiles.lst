@@ -1,0 +1,8 @@
+com\example\user\AppUser.class
+com\example\user\AppUserRepository.class
+com\example\Spring\Authentication\SpringAuthenticationApplication.class
+com\example\Spring\Authentication\config\SecurityConfig.class
+com\example\auth\AuthController$UserResponse.class
+com\example\auth\AuthController$LoginRequest.class
+com\example\auth\AuthController$RegisterRequest.class
+com\example\auth\AuthController.class
