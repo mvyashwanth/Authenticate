@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:8080/api/auth";
+const API = "http://localhost:8082/api/auth";
 
 const response = await fetch(`${API}/register`,{
   method:"POST",
