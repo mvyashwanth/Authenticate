@@ -1,20 +1,7 @@
 
 import { useEffect, useState } from "react";
 
-const API = "http://localhost:8082/api/auth";
-
-const response = await fetch(`${API}/register`,{
-  method:"POST",
-  headers:{
-    "content-Type":"application/json",
-  },
-  credentials:"include",
-  body:JSON.stringify({
-    name: "Test User",
-    email: "test@gmail.com",
-    password:"test123"
-  }),
-});
+const API = import.meta.env.VITE_API_BASE_URL || "http://localhost:8082/api/auth";
 
 async function apiRequest(path, options = {}) {
   const response = await fetch(`${API}${path}`, {
